@@ -25,7 +25,11 @@ a {
   text-decoration: none;
 }
 
-header {}
+/* HEADER */
+header {
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+}
 header .inner {
   width: 1100px;
   height: 120px;
@@ -43,6 +47,9 @@ header .logo {
 
 header .sub-menu {
   display: flex;
+  top: 10px;
+  right: 0;
+  position: absolute;
 }
 header .sub-menu ul.menu {
   font-family: Arial, sans-serif;  /* Arial 없으면 고딕체 중 아무거나 */
