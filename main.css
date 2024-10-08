@@ -101,4 +101,8 @@ header .sub-menu .search .material-icons {
   bottom: 0;
   position: absolute;
   right: 5px;
+  transition: .4s;
+}
+header .sub-menu .search.focused .material-icons {
+  opacity: 0;
 }
