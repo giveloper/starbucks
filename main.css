@@ -17,3 +17,11 @@ body {
   line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;
 }
+
+header {}
+header .inner {
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto;
+}
+header .logo {}
