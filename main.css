@@ -41,7 +41,9 @@ header .logo {
   left: 0;
 }
 
-header .sub-menu {}
+header .sub-menu {
+  display: flex;
+}
 header .sub-menu ul.menu {
   font-family: Arial, sans-serif;  /* Arial 없으면 고딕체 중 아무거나 */
   display: flex;
@@ -71,7 +73,32 @@ header .sub-menu ul.menu li a {
 header .sub-menu ul.menu li a:hover {
   color: #000;
 }
-header .sub-menu .search {}
-header .sub-menu .search {}
-header .sub-menu .search input {}
-header .sub-menu .search .material-icons {}
+header .sub-menu .search {
+  height: 34px;
+  position: relative;
+}
+header .sub-menu .search input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;  /* input 에 디폴트로 있는 파란 테두리 */
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+  transition: .4s;
+}
+header .sub-menu .search input:focus {
+  width: 190px;
+  border-color: #669900;
+}
+header .sub-menu .search .material-icons {
+  height: 24px;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  right: 5px;
+}
