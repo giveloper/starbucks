@@ -11,11 +11,15 @@
   font-style: normal;
 }
 
+/* COMMON */
 body {
   color: #333;
   font-size: 16px;
   line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;
+}
+img {
+  display: block;
 }
 
 header {}
