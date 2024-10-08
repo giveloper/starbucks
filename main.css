@@ -21,6 +21,9 @@ body {
 img {
   display: block;
 }
+a {
+  text-decoration: none;
+}
 
 header {}
 header .inner {
@@ -37,3 +40,38 @@ header .logo {
   bottom: 0;
   left: 0;
 }
+
+header .sub-menu {}
+header .sub-menu ul.menu {
+  font-family: Arial, sans-serif;  /* Arial 없으면 고딕체 중 아무거나 */
+  display: flex;
+  position: relative;
+}
+header .sub-menu ul.menu li {}
+header .sub-menu ul.menu li:before {
+  content: "";  /* 지우면 안됨 */
+  display: block;  /* 인라인 요소라 가로세로값 안먹음 */
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;  /* 이거 쓰면 블록 요소됨 */
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+header .sub-menu ul.menu li:first-child::before {
+  display: none;
+}
+header .sub-menu ul.menu li a {
+  font-size: 13px;
+  padding: 11px 16px;  /* block 요소로 바꿔줘야 제대로 먹음 */
+  display: block;
+  color: #656565;
+}
+header .sub-menu ul.menu li a:hover {
+  color: #000;
+}
+header .sub-menu .search {}
+header .sub-menu .search {}
+header .sub-menu .search input {}
+header .sub-menu .search .material-icons {}
