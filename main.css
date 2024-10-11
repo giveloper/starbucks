@@ -392,3 +392,18 @@ header .badges .badge {
   left: 50%;    /* 요소 배치가 화면 가운데부터 시작됨 */
   margin-left: calc((819px * 3 + 20px) / -2);  /* 요소 너비 반만큼 왼쪽으로 이동시킴 */
 }
+.notice .promotion .swiper-slide {
+  position: relative;
+  opacity: .5;
+  transition: opacity 1s;
+}
+.notice .promotion .swiper-slide-active {
+  opacity: 1;
+}
+.notice .promotion .swiper-slide .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
