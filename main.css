@@ -400,6 +400,11 @@ header .badges .badge {
   height: 693px;
   background-color: #f6f5ef;
   position: relative;
+  transition: height .4s;
+  overflow: hidden;   /* 줄어들면서 안에 요소들이 넘치므로 잘라줌 */
+}
+.notice .promotion.hide{
+  height: 0;
 }
 .notice .promotion .swiper {
   /* width: calc(100% - 50px); */
