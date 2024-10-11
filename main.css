@@ -646,3 +646,15 @@ position: absolute;
 .pick-your-favorite .text-group .description {
 	margin-bottom: 40px;
 }
+
+/* RESERVE STORE */
+.reserve-store {
+	background-image: url("../images/reserve_store_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;  /* 화면 스크롤해도 이미지는 안움직임. 시간차 애니메이션(Parallax) 적용 */
+	background-size: cover;  /* 배경 이미지를 넓은 너비에 맞춰서 보여줌 */ 
+}
+.reserve-store .inner {
+	height: 600px;
+}
