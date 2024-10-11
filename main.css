@@ -657,4 +657,32 @@ position: absolute;
 }
 .reserve-store .inner {
 	height: 600px;
+	display: flex;
+	justify-content: center;  /* 수평 가운데 정렬 */
+	align-items: center;  /* 수직 가운데 정렬 */
+}
+.reserve-store .medal {
+	width: 334px;
+	height: 334px;
+	perspective: 600px;
+}
+.reserve-store .medal .front,
+.reserve-store .medal .back {
+	width: 334px;
+	height: 334px;
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+}
+.reserve-store .medal .front {
+	transform: rotateY(0deg);
+}
+.reserve-store .medal:hover .front {
+	transform: rotateY(180deg);
+}
+.reserve-store .medal .back {
+	transform: rotateY(-180deg);
+}
+.reserve-store .medal:hover .back {
+	transform: rotateY(0deg);
 }
