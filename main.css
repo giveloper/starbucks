@@ -175,6 +175,9 @@ header .main-menu .item .item__contents .contents__menu > ul > li ul li {
   color: #999;
   cursor: pointer;  /* 마우스 커서 손가락으로 바뀜 */
 }
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+  color: #669900;
+}
 header .main-menu .item .item__contents .contents__texture {
   padding: 26px 0;
   font-size: 12px;
