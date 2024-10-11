@@ -46,3 +46,10 @@ fadeEls.forEach(function (fadeEl, index) {
     opacity: 1
   })
 });
+
+// new Swiper(선택자, 옵션)
+new Swiper('.notice-line .swiper', {
+  direction: 'vertical',   // 이것만 넣어도 동작함. 마우스 드래그로 하면됨.
+  autoplay: true,
+  loop: true
+});
