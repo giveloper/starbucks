@@ -479,3 +479,26 @@ header .badges .badge {
   right: 50%;
 	margin-right: -480px;
 }
+
+/* REWARDS */
+.rewards {
+  position: relative;
+}
+.rewards .bg-left {
+  width: 50%;
+  height: 100%;
+  background-color: #272727;
+  position: absolute;
+  left: 0;
+}
+.rewards .bg-right {
+  width: 50%;
+  height: 100%;
+  background-color: #d5c798;
+  position: absolute;
+  right: 0;
+}
+.rewards .inner {
+  height: 241px;
+  background-image: url("../images/rewards.jpg");
+}
