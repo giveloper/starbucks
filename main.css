@@ -38,6 +38,7 @@ header {
   position: fixed;  /* 뷰포트 기준으로 설정 */
 	top: 0;  /* 뷰포트 기준으로 설정 */
 	width: 100%;  /* 축소해보면 width 전부 못써서 추가 */
+  z-index: 9;
 }
 header > .inner {
   width: 1100px;
