@@ -191,3 +191,16 @@ header .main-menu .item .item__contents .contents__texture p {
   color: #669900;
   margin: 4px 0 14px;
 }
+
+header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+}
+header .badges .badge {
+  border-radius: 10px;
+  overflow: hidden;   /* radius 추가했는데 삐져나와서 hidden 처리 */
+  margin-bottom: 12px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0,0,0,.15);   /* 그림자 */
+}
