@@ -407,3 +407,52 @@ header .badges .badge {
   right: 0;
   margin: 0 auto;
 }
+.notice .promotion .swiper-pagination {
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+.notice .promotion .swiper-pagination swiper-pagination-bullet {
+  background-color: transparent;  /* 불릿 안쪽 색상이 없어짐 */
+	background-image: url("../images/promotion_slide_pager.png");
+	width: 12px;
+	height: 12px;
+	margin-right: 6px;
+	outline: none;
+}
+.notice .promotion .swiper-pagination swiper-pagination-bullet:last-chid {
+	margin-right: 0;
+}
+.notice .promotion .swiper-pagination swiper-pagination-bullet-active {
+	background-image: url("../images/promotion_slide_pager_on.png");
+}
+.notice .promotion .swiper-custom-button-prev,
+.notice .promotion .swiper-custom-button-next {
+	width: 42px;
+	height: 42px;
+	border: 2px solid #333;
+	border-radius: 50%;
+	position: absolute;
+	top: 300px;
+	z-index: 1;
+	cursor: pointer;
+  outline: none;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .4s;
+}
+.notice .promotion .swiper-custom-button-prev:hover,
+.notice .promotion .swiper-custom-button-next:hover {
+  background-color: #333;
+  color: #fff;
+
+}
+.notice .promotion .swiper-custom-button-prev {
+	left: 50%;
+	margin-left: -480px;
+}
+.notice .promotion .swiper-custom-button-next {
+  right: 50%;
+	margin-right: -480px;
+}
