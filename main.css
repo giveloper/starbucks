@@ -80,6 +80,20 @@ a {
 	color: #333;
 	border-color: #fff;
 }
+.back-to-position {
+	opacity: 0;
+	transition: 1s;
+}
+.back-to-position.to-right {  /* 왼쪽 -> 오른쪽 나타나는 애니메이션 */
+	transform: translateX(-150px);
+}
+.back-to-position.to-left {   /* 왼쪽 <- 오른쪽 나타나는 애니메이션 */
+	transform: translateX(150px);
+}
+.show .back-to-position {
+	opacity: 1;
+	transform: translateX(0);
+}
 
 /* HEADER */
 header {
