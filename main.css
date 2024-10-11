@@ -544,7 +544,13 @@ header .badges .badge {
   padding-top: 56.26%;    /* 16:9 비율 */
 }
 .youtube .youtube__cover {  /* 유튜브 영상 위에 커버 깔아줌. */
-	
+  background-image: url("../images/video_cover_pattern.png");
+  background-color: rgba(0,0,0,.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .youtube .inner {}
 
