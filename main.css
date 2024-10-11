@@ -502,3 +502,21 @@ header .badges .badge {
   height: 241px;
   background-image: url("../images/rewards.jpg");
 }
+.rewards .btn-group {
+	position: absolute;
+	bottom: 24px;
+	right: 0;
+	width: 250px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.rewards .btn-group .btn.sign-up {
+	margin-right: 10px;
+}
+.rewards .btn-group .btn.sign-in {
+	width: 110px;   /* sign-up 너비가 130 이기에 110 으로 설정함 */
+}
+.rewards .btn-group .btn.gift {
+	margin-top: 10px;
+	flex-grow: 1;
+}
