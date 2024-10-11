@@ -21,10 +21,19 @@ const badgeEl = document.querySelector('header .badges');
 
 window.addEventListener('scroll', _.throttle(function () {
   if (window.scrollY > 500) {
-    // 배지 숨기기 
-    badgeEl.style.display = 'none';
+    // 배지 숨기기
+    // gsap.to(요소, 지속시간, 옵션)
+    gsap.to(badgeEl, .6, {
+      opacity: 0,   
+      display: 'none'   // none 처리 안해주면 opacity 0 돼더라도 클릭이 됨
+    });
   } else {
     // 배지 보이기
     badgeEl.style.display = 'block';
+    gsap.to(badgeEl, .6, {
+      opacity: 1,
+      display: 'block'
+    });
   }
+  
 }, 300));   // _.throttle(함수, 시간)
