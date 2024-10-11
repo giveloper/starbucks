@@ -17,7 +17,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;
-  height: 4000px;
+  height: 8000px;
 }
 img {
   display: block;
@@ -620,4 +620,29 @@ header .badges .badge {
 .reserve-coffee .product {
 position: absolute;
 	right: 0;
+}
+
+/* PICK YOUR FAVORITE */
+.pick-your-favorite {
+	background-image: url("../images/favorite_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;  /* 화면 스크롤해도 이미지는 안움직임. 시간차 애니메이션(Parallax) 적용 */
+	background-size: cover;  /* 배경 이미지를 넓은 너비에 맞춰서 보여줌 */ 
+}
+.pick-your-favorite .inner {  
+	padding: 110px 0;
+}
+.pick-your-favorite .text-group {
+	margin-left: 100px;
+	width: 362px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.pick-your-favorite .text-group .title {
+	margin-bottom: 40px;
+}
+.pick-your-favorite .text-group .description {
+	margin-bottom: 40px;
 }
