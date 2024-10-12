@@ -132,3 +132,7 @@ spyEls.forEach(function (spyEl) {
 		.setClassToggle(spyEl, 'show')  // 감시되면 해당 메소드 실행. 해당 요소에 class="show" 추가
 		.addTo(new ScrollMagic.Controller());
 });
+
+// FOOTER
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();  // 2024
