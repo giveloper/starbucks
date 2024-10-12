@@ -874,3 +874,21 @@ footer .copyright {
 footer .logo {
 	margin: 30px auto 0;  /* 상 중 하 */ /* 이미지는 width 없어도 block 요소로 바꾸면 가운데 정렬 된다. 위에서 바꿨다. */
 }
+
+/* TOP SCROLL BUTTON */
+#to-top {
+	width: 42px;
+	height: 42px;
+	background-color: #333;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 9;
+}
