@@ -72,6 +72,17 @@ new Swiper('.promotion .swiper', {
   }
 });
 
+new Swiper('.awards .swiper', {
+	autoplay: true,
+	loop: true,
+	spaceBetween: 30,
+	slidesPerView: 5,
+	navigation: {
+		prevEl: '.awards .swiper-custom-button-prev',
+		nextEl: '.awards .swiper-custom-button-next'
+	}
+});
+
 const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
 let isHidePromotion = false;
