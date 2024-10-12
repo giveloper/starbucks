@@ -27,6 +27,11 @@ window.addEventListener('scroll', _.throttle(function () {
       opacity: 0,   
       display: 'none'   // none 처리 안해주면 opacity 0 돼더라도 클릭이 됨
     });
+
+    // scrollToTop 버튼 보이기!
+    gsap.to('#to-top', .2, {  // CSS 선택자로 넣어줘도 된다.
+        x:0
+    });
   } else {
     // 배지 보이기
     badgeEl.style.display = 'block';
@@ -34,8 +39,11 @@ window.addEventListener('scroll', _.throttle(function () {
       opacity: 1,
       display: 'block'
     });
+    // scrollToTop 버튼 숨기기!
+		gsap.to('#to-top', .2, {  // CSS 선택자로 넣어줘도 된다.
+			x: 100
+		}); 
   }
-  
 }, 300));   // _.throttle(함수, 시간)
 
 const fadeEls = document.querySelectorAll('.visual .fade-in');
@@ -136,3 +144,10 @@ spyEls.forEach(function (spyEl) {
 // FOOTER
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();  // 2024
+
+const toTopEl = document.querySelector('#to-top'); // 위에 버튼 노출 선택자로 넣었는데 맨위에 변수 선언해서 사용하는게 더 효율적이다.
+toTopEl.addEventListener('click', function () {
+	gsap.to(window, .7, {
+		scrollTo: 0  // ScrollToPlugin cdn 추가해야 사용 가능하다.
+	});
+});
